@@ -1,0 +1,2 @@
+[strapp03]
+stapp03 ansible_host=172.16.238.12 ansible_ssh_pass=BigGr33n ansible_user=banner ansible_connection=ssh
