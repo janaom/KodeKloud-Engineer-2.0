@@ -24,14 +24,14 @@ default user to use for playbooks if user is not specified
 #remote_user = root
 [root@jump_host ~]# vi /etc/ansible/ansible.cfg
 
----
 #FIND THIS PART IN ansible.cfg
+
 default user to use for playbooks if user is not specified
 
 (/usr/bin/ansible will use current user as default)
+
 #change remote_user to siva
 remote_user = siva   
------
 
 [root@jump_host ~]# cat /etc/ansible/ansible.cfg |grep remote_user -B5
 
