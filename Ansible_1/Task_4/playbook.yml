@@ -1,0 +1,10 @@
+---
+- name: Copy index.html to application servers
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Copy index.html file
+      copy:
+        src: /usr/src/data/index.html
+        dest: /opt/data
