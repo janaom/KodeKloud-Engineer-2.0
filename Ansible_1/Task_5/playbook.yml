@@ -1,0 +1,11 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: Create blank file
+    file:
+      path: /tmp/web.txt
+      state: touch
+      owner: "{{ ansible_user }}"
+      group: "{{ ansible_user }}"
+      mode: "0755"

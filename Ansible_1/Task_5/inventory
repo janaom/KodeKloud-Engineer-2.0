@@ -1,0 +1,3 @@
+stapp01 ansible_user=tony ansible_ssh_pass=Ir0nM@n
+stapp02 ansible_user=steve ansible_ssh_pass=Am3ric@
+stapp03 ansible_user=banner ansible_ssh_pass=BigGr33n
