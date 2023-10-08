@@ -1,10 +1,6 @@
-The Nautilus DevOps team has started
- testing their Ansible playbooks on different servers within the stack. 
-They have placed some playbooks under `/home/thor/playbook/` directory on `jump host`
- which they want to test. Some of these playbooks have already been 
-tested on different servers, but now they want to test them on `app server 3` in `Stratos DC`.
- However, they first need to create an inventory file so that Ansible 
-can connect to the respective app. Below are some requirements:
+## Instructions
+
+The Nautilus DevOps team has started testing their Ansible playbooks on different servers within the stack. They have placed some playbooks under `/home/thor/playbook/` directory on `jump host` which they want to test. Some of these playbooks have already been tested on different servers, but now they want to test them on `app server 3` in `Stratos DC`. However, they first need to create an inventory file so that Ansible can connect to the respective app. Below are some requirements:
 
 a. Create an ini type Ansible inventory file `/home/thor/playbook/inventory` on `jump host`.
 
