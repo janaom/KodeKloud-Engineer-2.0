@@ -10,4 +10,4 @@ spec:
     image: nginx:latest
     command: ["sleep", "infinity"]
 
-#then create the pod: kubectl create -f pod.yaml
+#then run: kubectl create -f pod.yaml
