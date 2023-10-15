@@ -12,8 +12,13 @@ Create a namespace named `dev` and create a POD under it; name the pod `dev-ngin
 
 - to check namespaces: `kubectl get namespace`
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/34f312f8-4775-43c6-b8b3-4b7e4bbf769d)
+
+
 - to create the pod: `kubectl run dev-nginx-pod --image=nginx:latest --namespace=dev`
 
 - to check the pod: `kubectl get pod -n dev`
 
 - to check the details about the pod: `kubectl describe pod dev-nginx-pod -n dev`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/5b6e25cc-c028-41af-906c-bc0ae9812902)
