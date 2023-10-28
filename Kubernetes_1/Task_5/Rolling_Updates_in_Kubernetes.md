@@ -47,6 +47,7 @@ If the rollout has been successfully completed, you'll see output similar to the
 
 
 `kubectl get pods`
+
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/c115aefd-6f36-4f19-999e-0413a9b10ad5)
 
 
