@@ -12,7 +12,7 @@ Make sure all pods are up and running after the update.
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/1d58c04b-22b2-4688-aef9-eebfe15b61e6)
 
-`kubectl describe deploy `nginx-deployment``
+`kubectl describe deploy nginx-deployment`
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/97854fd8-c3d7-44ea-a700-6b5c947fb2a4)
 
