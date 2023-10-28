@@ -9,18 +9,22 @@ Make sure all pods are up and running after the update.
 
 # Solution
 `kubectl get all`
+
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2ebaada8-1c06-4883-9db1-fa5bff723e3f/b35069fc-269f-4c31-a57a-e5d027447461/Untitled.png)
 
 `kubectl describe deploy `nginx-deployment``
+
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2ebaada8-1c06-4883-9db1-fa5bff723e3f/e44eb223-91f1-4e4d-8a27-59f487bb69af/Untitled.png)
 
 `kubectl edit deployment nginx-deployment`  change the image
+
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2ebaada8-1c06-4883-9db1-fa5bff723e3f/bd233b94-3a3f-4be7-bc1b-316604ce0470/Untitled.png)
 
 `kubectl describe deploy `nginx-deployment``
+
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2ebaada8-1c06-4883-9db1-fa5bff723e3f/f09e39a3-5b0c-4811-9eee-a56699e1709c/Untitled.png)
 
-```
+```YAML
 Events:
   Type    Reason             Age    From                   Message
   ----    ------             ----   ----                   -------
