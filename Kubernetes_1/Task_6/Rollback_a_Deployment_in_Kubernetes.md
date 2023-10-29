@@ -6,6 +6,8 @@ There is a deployment named `nginx-deployment`; roll it back to the previous rev
 
 `Note:` The `kubectl` utility on `jump_host` has been configured to work with the kubernetes cluster.
 
+# Solution
+
 `kubectl get all`
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/6e6db143-ac70-4ea3-8827-0b3e9c3d187e)
