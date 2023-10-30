@@ -10,7 +10,7 @@ The Nautilus DevOps team is going to deploy some applications on kubernetes clus
 
 # Solution
 
-Create a yaml file:
+Create a yaml file `replicaset.yaml`:
 
 ```YAML
 apiVersion: apps/v1
