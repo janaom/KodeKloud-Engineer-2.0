@@ -36,3 +36,5 @@ spec:
           image: httpd:latest
 ```
 Run: `kubectl apply -f replicaset.yaml`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/bd650198-4f2a-416e-8953-063a4cd99704)
