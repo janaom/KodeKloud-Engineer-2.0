@@ -37,4 +37,10 @@ Run with: `kubectl apply -f cronjob.yaml`
 
 Check the result with `kubectl get cronjob  -o wide`
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/8c8ef0f1-da4e-4e52-bce6-110b21ca64ea)
+
+
 And: `kubectl describe cronjob`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/60d98bdf-d63f-4d26-990d-fba6eac80eb3)
+
