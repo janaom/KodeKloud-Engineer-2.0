@@ -46,6 +46,7 @@ A simple case is to create one Job object in order to reliably run one Pod to co
 You can also use a Job to run multiple Pods in parallel.
 
 If you want to run a Job (either a single task, or several in parallel) on a schedule, see CronJob.
+
 `https://kubernetes.io/docs/concepts/workloads/controllers/job/`
 
 ## Running an example Job
