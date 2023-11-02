@@ -13,13 +13,56 @@ The Nautilus DevOps team want to create a time check pod in a particular Kuberne
 
 Create a namespace: `kubectl create namespace xfusion`
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/f6407cce-3947-42c9-9965-61c643ff15de)
+
+
 Create a `config.yaml`:
+```YAML
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: time-config
+  namespace: xfusion
+data:
+  TIME_FREQ: "8"
+```
 
 Run with: `kubectl apply -f config.yaml`
 
 To check configmap: `kubectl get configmap time-config -n xfusion`
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/924ef355-045a-48bf-9bea-6dc2c6669bac)
 
 Create a `pod.yaml`:
+```YAML
+apiVersion: v1
+kind: Pod
+metadata:
+  name: time-check
+  namespace: xfusion
+spec:
+  containers:
+  - name: time-check
+    image: busybox:latest
+    command: ["/bin/sh", "-c", "while true; do date; sleep $TIME_FREQ; done >> /opt/devops/time/time-check.log"]
+    env:
+    - name: TIME_FREQ
+      valueFrom:
+        configMapKeyRef:
+          name: time-config
+          key: TIME_FREQ
+    volumeMounts:
+    - name: log-volume
+      mountPath: /opt/devops/time
+  volumes:
+  - name: log-volume
+    emptyDir: {}
+```
 
 Run with: `kubectl apply -f pod.yaml`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/be3e594a-a6d9-4ef0-addd-758ee3925342)
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/7dcb2b03-876b-4752-a6eb-adab2e8c9069)
+
+
