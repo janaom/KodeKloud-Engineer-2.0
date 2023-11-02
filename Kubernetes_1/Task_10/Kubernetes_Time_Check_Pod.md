@@ -65,4 +65,23 @@ Run with: `kubectl apply -f pod.yaml`
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/7dcb2b03-876b-4752-a6eb-adab2e8c9069)
 
+# Kubernetes docs
+`https://kubernetes.io/docs/concepts/configuration/configmap/`
 
+## ConfigMaps
+
+A ConfigMap is an API object used to store non-confidential data in key-value pairs. Pods can consume ConfigMaps as environment variables, command-line arguments, or as configuration files in a volume.
+
+A ConfigMap allows you to decouple environment-specific configuration from your container images, so that your applications are easily portable.
+
+
+## ConfigMaps and Pods
+
+You can write a Pod spec that refers to a ConfigMap and configures the container(s) in that Pod based on the data in the ConfigMap. The Pod and the ConfigMap must be in the same namespace.
+
+There are four different ways that you can use a ConfigMap to configure a container inside a Pod:
+
+    Inside a container command and args
+    Environment variables for a container
+    Add a file in read-only volume, for the application to read
+    Write code to run inside the Pod that uses the Kubernetes API to read a ConfigMap
