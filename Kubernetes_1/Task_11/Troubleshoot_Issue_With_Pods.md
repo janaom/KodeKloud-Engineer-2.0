@@ -21,7 +21,7 @@ Don't forget to check the events
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/a5db21c9-27a2-47a5-a8cd-7490ed1cbaf3)
 
-Edit the pod `kubectl edit pod webserver` and save changes
+Edit the pod `kubectl edit pod webserver` and save changes (change the image, it should be `nginx:latest`)
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/b949e5bc-10df-47df-878b-6e48c2f54fdf)
 
