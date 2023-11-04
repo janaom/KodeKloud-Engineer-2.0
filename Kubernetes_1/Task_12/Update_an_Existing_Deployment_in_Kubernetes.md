@@ -16,12 +16,16 @@ We already have a deployment named `nginx-deployment` and service named `nginx-s
 
 Check the cluster `kubectl  get all -o wide`
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/e551c002-fb77-4755-bf4e-60766d38f146)
+
+
 Check deployment and service: `kubectl describe service` `kubectl describe deploy`
 
-Edit the service: `kubectl edit service nginx-service`
+Edit the service: `kubectl edit service nginx-service` and save changes
 
-Edit deployment: `kubectl edit deploy`
-
-Check again to see Replicas and Events
+Edit deployment: `kubectl edit deploy` and save changes
 
 Again, check everything with `k get all -o wide` : Replicas, image, Ports
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/d78601cd-04c5-4af1-bdfb-7d18f8820748)
+
