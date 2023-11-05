@@ -177,6 +177,7 @@ This command filters the output of the previous command to search for the line t
 `vi /tmp/nginx.yaml`
 
 change this part to `/var/www/html`
+
 The nginx container typically expects website files to be present in the /var/www/html directory, which serves as the default document root for nginx. Placing the index.php file in this directory ensures that nginx can serve it as the default page for the website.
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/182d00e4-1293-4795-8f45-c5a675f9d2f1)
