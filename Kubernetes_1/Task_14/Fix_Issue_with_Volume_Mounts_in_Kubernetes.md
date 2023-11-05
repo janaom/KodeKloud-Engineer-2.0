@@ -1,3 +1,5 @@
+# Instructions
+
 We deployed a Nginx and PHP-FPM based setup on Kubernetes cluster last week and it had been working fine so far. This morning one of the team members made a change somewhere which caused some issues, and it stopped working. Please look into the issue and fix it:
 
 The pod name is `nginx-phpfpm` and configmap name is `nginx-config`. Figure out the issue and fix the same.
@@ -6,13 +8,27 @@ Once issue is fixed, copy `/home/thor/index.php` file from the `jump host` to th
 
 `Note:` The `kubectl` utility on `jump_host` has been configured to work with the kubernetes cluster.
 
+# Solution
+
 `kubectl get all -o wide`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/8321f3b5-75ce-40bd-95fc-409c5c7e2abf)
+
 
 `kubectl describe configmap nginx-config`
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/776fb86f-3e83-481e-8188-7e0b9bce79eb)
+
+
+This command retrieves the YAML definition of the nginx-phpfpm pod and saves it to the /tmp/nginx.yaml file. By examining the pod's configuration, we can identify the specific location where the file needs to be copied:
+
 `kubectl get pod nginx-phpfpm -o yaml  > /tmp/nginx.yaml`
 
+This command displays the contents of the /tmp/nginx.yaml file. It helps in inspecting the pod's YAML definition to locate the mountPath for the nginx container's document root:
 `cat /tmp/nginx.yaml`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/5a120f78-9b6e-4539-9a0b-3ce3626855b2)
+
 
 ```YAML
 apiVersion: v1
@@ -154,18 +170,31 @@ status:
 
 See {"mountPath":"/usr/share/nginx/html”}
 
-cat /tmp/nginx.yaml  |grep /usr/share/nginx/html
+This command filters the output of the previous command to search for the line that contains /usr/share/nginx/html. It helps to confirm the current mount path for the nginx container's document root:
+
+`cat /tmp/nginx.yaml  |grep /usr/share/nginx/html`
 
 `vi /tmp/nginx.yaml`
 
-chnage this part to `/var/www/html`
+change this part to `/var/www/html`
+The nginx container typically expects website files to be present in the /var/www/html directory, which serves as the default document root for nginx. Placing the index.php file in this directory ensures that nginx can serve it as the default page for the website.
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/182d00e4-1293-4795-8f45-c5a675f9d2f1)
+
 
 `kubectl replace -f /tmp/nginx.yaml --force`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/64949b9d-37f6-4906-95e5-93bb236df0d6)
+
 
 `kubectl cp  /home/thor/index.php  nginx-phpfpm:/var/www/html -c nginx-container`
 
 
 Validate the result:
 `kubectl exec -it nginx-phpfpm -c nginx-container  -- curl -I  http://localhost:8099`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/0fae3aea-bdf1-4542-9212-ab1b1288db9d)
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/3409b652-a29d-4901-9bfe-a9cc5af2d3b0)
 
 
