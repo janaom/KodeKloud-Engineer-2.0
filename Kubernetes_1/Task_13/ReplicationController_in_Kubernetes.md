@@ -40,3 +40,11 @@ spec:
 ```
 
 Run with `kubectl create -f rc.yaml`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/fdfb5400-123e-4730-9d35-62839ceb4abc)
+
+# Kubernetes docs
+`https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/`
+
+## ReplicationController
+A ReplicationController ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available.
