@@ -13,6 +13,7 @@ ssh into the App Server 1: ssh tony@172.16.238.10
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/f4583deb-5142-4ffc-a8de-dde39e52da39)
 
 `sudo su -`
+
 `curl -L "https://github.com/docker/compose/releases/download/1.28.6/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose`
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/24fb5fc9-1064-4c6d-b278-307d1e53b128)
