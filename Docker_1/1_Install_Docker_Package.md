@@ -46,13 +46,17 @@ docker-compose version 1.28.6, build 5db8d86f
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/48c7908f-ba1f-4d8f-b36c-3b1ab051a3e8)
 
 `systemctl enable docker`
+
 `systemctl start docker`
+
 `systemctl status docker`
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/8c354e22-2f87-45de-861d-69151b553418)
 
 `docker --version`
+
 `docker ps`
+
 `docker-compose --version`
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/319de39b-acc2-47d4-ac1b-8cbc527533b9)
