@@ -24,6 +24,7 @@ ssh into the App Server 1: ssh tony@172.16.238.10
 ```
 
 `chmod +x /usr/local/bin/docker-compose`
+
 `ls -la /usr/local/bin/docker-compose`
 ```
 -rwxr-xr-x 1 root root 12212176 Nov  6 18:25 /usr/local/bin/docker-compose
@@ -37,7 +38,9 @@ docker-compose version 1.28.6, build 5db8d86f
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/0eda4e1a-c4a8-4238-80ec-53f901304630)
 
 `yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo`
+
 `yum install docker-ce docker-ce-cli containerd.io`
+
 `rpm -qa |grep docker`
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/48c7908f-ba1f-4d8f-b36c-3b1ab051a3e8)
