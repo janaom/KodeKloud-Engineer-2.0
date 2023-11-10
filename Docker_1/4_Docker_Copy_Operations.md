@@ -9,10 +9,14 @@ On `App Server 3` in `Stratos Datacenter` copy an encrypted file `/tmp/nautilus.
 
 ssh into the App Server 3: `ssh banner@172.16.238.12`
 
+(Infra: `https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/nautilus#infrastructure-details`)
+
 Check containers: `docker ps`
 
-Copy the file: `docker cp /tmp/nautilus.txt.gpg bed04cbb3c78:/home/` (docker cp /tmp/nautilus.txt.gpg <container_id>:/home/)
+Copy the file: `docker cp /tmp/nautilus.txt.gpg bed04cbb3c78:/home/` (`docker cp /tmp/nautilus.txt.gpg <container_id>:/home/`)
 
 Check the result: `docker exec -it bed04cbb3c78 bash` (`docker exec -it <container_id> bash`)
 
 And the: `cd /home/`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/07ee8ad3-1c39-414c-b8cf-ce515ccaa1a4)
