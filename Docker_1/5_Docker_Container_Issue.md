@@ -14,3 +14,5 @@ Check all containers: `docker ps -a`
 Restart container: `docker restart nautilus`
 
 Check the result: `curl http://localhost:8080/`
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/89dd0954-f847-4ad0-b765-baa4c7c6413a)
