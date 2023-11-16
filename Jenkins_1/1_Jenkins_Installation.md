@@ -20,8 +20,9 @@ ssh into the Jenkins server: `ssh root@jenkins`
 This command uses the yum package manager to install the wget utility. wget is a command-line tool used for downloading files from the web: `yum install wget -y`
 
 This command uses wget to download the Jenkins repository configuration file and save it as /etc/yum.repos.d/jenkins.repo:
-wget -O /etc/yum.repos.d/jenkins.repo \
-https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+`wget -O /etc/yum.repos.d/jenkins.repo \
+https://pkg.jenkins.io/redhat-stable/jenkins.repo`
 
 This command lists the files in the /etc/yum.repos.d/ directory. It is used to verify that the jenkins.repo file was successfully downloaded and saved in the correct location: `ls -l /etc/yum.repos.d/`
 
