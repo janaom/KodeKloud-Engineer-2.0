@@ -12,8 +12,8 @@ Click on the Jenkins button on the top bar to access the Jenkins UI. Login using
 
 2. For these scenarios requiring changes to be done in a web UI, please take screenshots so you can share them with us for review in case your task is marked incomplete. You may also consider using screen recording software like [loom.com](http://loom.com/) to record and share your work.
 
-3. # Solution
-4. 
-5. Open Jenkins link, install plugins there
+# Solution
+ 
+Open Jenkins link, install plugins there
 
-6. ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/3f08b6f9-29b9-4b71-8fd4-17956dcc48a3)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/3f08b6f9-29b9-4b71-8fd4-17956dcc48a3)
