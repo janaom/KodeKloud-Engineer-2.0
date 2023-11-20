@@ -19,29 +19,29 @@ the back end so in such case please make sure to refresh the UI page.
 
 3. For these kind of scenarios requiring changes to be done in a web UI, please take screenshots so that you can share it with us for review in case your task is marked incomplete. You may also consider using a screen recording software such as [loom.com](http://loom.com/) to record and share your work.
 
-4. # Solution
+# Solution
 
-5. Connect to Jenkins, find and install ssh plugins
+Connect to Jenkins, find and install ssh plugins
 
-6. Create ssh credentials for the storage server user
+Create ssh credentials for the storage server user
 
-7. ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/15729f94-f1f7-44b6-af25-007c846065a3)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/15729f94-f1f7-44b6-af25-007c846065a3)
 
-8. Add ssh host in Configure System, check connection, apply and save
+Add ssh host in Configure System, check connection, apply and save
 
-9. ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/26c33c70-eb38-4745-90ec-f3ccb7bb20cc)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/26c33c70-eb38-4745-90ec-f3ccb7bb20cc)
 
-   Create a job with these parameters
+Create a job with these parameters
 
-   ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/4c914f76-1a31-44b6-b2e9-24fcb9ea448a)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/4c914f76-1a31-44b6-b2e9-24fcb9ea448a)
 
-   Configure Build Steps, the command: echo 'Bl@kW' | sudo -S yum install -y $PACKAGE
+Configure Build Steps, the command: echo 'Bl@kW' | sudo -S yum install -y $PACKAGE
 
-   ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/79bdbbed-d139-4d3a-a9a5-ee14b49d0ea1)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/79bdbbed-d139-4d3a-a9a5-ee14b49d0ea1)
 
-   Run the job
+Run the job
 
-   ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/c4703e7b-9450-4ffc-a49f-42deb250319d)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/c4703e7b-9450-4ffc-a49f-42deb250319d)
 
 
 
