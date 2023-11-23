@@ -38,4 +38,4 @@ Add the user "mohammed" to the "nautilus_developers" group on each App server by
 - `G`: This option specifies the group(s) to which the user should be added. Multiple groups can be specified by separating them with commas. In this case, the group `nautilus_developers` is specified.
 
 
-- ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/e5bc2468-ace7-451c-aef5-b6f2bf8337b2)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/e5bc2468-ace7-451c-aef5-b6f2bf8337b2)
