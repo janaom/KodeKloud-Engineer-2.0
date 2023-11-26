@@ -19,11 +19,17 @@ To check the expiry date of the user "kirsty", you can use the `chage` command: 
 This command displays the current aging information for the user "kirsty", including the expiry date. If the user has an expiry date set, you will see output similar to the following:
 
 Last password change                                    : Nov 26, 2023
+
 Password expires                                        : never
+
 Password inactive                                       : never
+
 Account expires                                         : Feb 17, 2021
+
 Minimum number of days between password change          : 0
+
 Maximum number of days between password change          : 99999
+
 Number of days of warning before password expires       : 7
 
 
