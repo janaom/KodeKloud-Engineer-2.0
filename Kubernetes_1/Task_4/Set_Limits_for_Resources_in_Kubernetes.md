@@ -9,3 +9,25 @@ Requests: Memory: `15Mi`, CPU: `100m`
 Limits: Memory: `20Mi`,  CPU: `100m`
 
 `Note:` The `kubectl` utility on `jump_host` has been configured to work with the kubernetes cluster.
+
+# Solution
+
+```YAML
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd-pod
+spec:
+  containers:
+    - name: httpd-container
+      image: httpd:latest
+      resources:
+        requests:
+          memory: "15Mi"
+          cpu: "100m"
+        limits:
+          memory: "20Mi"
+          cpu: "100m"
+
+#Create a pod with `kubectl apply -f httpd-pod.yaml` command
+```
