@@ -16,7 +16,7 @@ Change permissions: `sudo chmod +rx xfusioncorp.sh`
 - `chmod`: The command used to change file permissions.
 - `+rx`: The `+` sign grants the specified permissions, and `r` and `x` represent read and execute permissions, respectively. By using `+rx`, you are granting both read and execute permissions to the file.
 - `file_name`: The name of the file you want to modify the permissions for.
-- 
+
 Note: To make a file executable, it must also be readable.
 
 Check the result: `ls -l xfusioncorp.sh`
