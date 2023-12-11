@@ -6,7 +6,7 @@ Open all incoming connection  on `8089/tcp` port.  Zone should be `public`.
 
 # Solution
 
-ssh into the App Server 2: `ssh clint@172.16.238.16`
+ssh into the Backup server: `ssh clint@172.16.238.16`
 
 Run the following command to open port 8089/tcp and set the zone to public: `sudo firewall-cmd --zone=public --add-port=8089/tcp --permanent`This command adds a rule to the public zone of firewalld, allowing incoming connections on port 8089/tcp. The `--permanent` flag ensures that the rule persists across system reboots.
 
