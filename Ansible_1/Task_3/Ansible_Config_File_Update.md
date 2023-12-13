@@ -7,10 +7,17 @@ On `jump host` make appropriate changes so that Ansible can use `siva` as a defa
 # Solution
 
 `sudo su -`
+
 Display the contents of the ansible.cfg file and search for the pattern "remote_user": `cat /etc/ansible/ansible.cfg |grep remote_user -B5`
+
 Edit its contents: `vi /etc/ansible/ansible.cfg`
+
 Change to:
+
 remote_user = siva
+
 Check the results:
+
 `cat /etc/ansible/ansible.cfg |grep remote_user -B5`
+
 remote_user = siva
