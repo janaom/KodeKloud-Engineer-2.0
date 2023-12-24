@@ -20,3 +20,4 @@ Infra details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/n
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/b01a2127-8ffa-480d-a1da-76d824e6bbb6)
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/e60233ea-3ff5-4008-8059-ccb496e57bef)
