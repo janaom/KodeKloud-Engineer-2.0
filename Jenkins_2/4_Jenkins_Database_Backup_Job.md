@@ -39,6 +39,7 @@ Create a new job
 Enter this command: 
 
 mysqldump -u kodekloud_roy -pasdfgdsd kodekloud_db01 > db_$(date +%F).sql
+
 scp -o StrictHostKeyChecking=no db_$(date +%F).sql clint@stbkp01:/home/clint/db_backups
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/fbd0bcc8-f8c6-4e4c-8bfc-6ce729456d8a)
