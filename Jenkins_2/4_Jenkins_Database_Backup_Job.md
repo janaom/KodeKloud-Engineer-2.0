@@ -36,7 +36,7 @@ Create a new job
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/1524cbde-51bf-412e-917f-8055f6e7333c)
 
-Enter this command: 
+Enter these commands: 
 
 mysqldump -u kodekloud_roy -pasdfgdsd kodekloud_db01 > db_$(date +%F).sql
 
