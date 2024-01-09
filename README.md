@@ -23,3 +23,5 @@ Infra details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/n
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/e60233ea-3ff5-4008-8059-ccb496e57bef)
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/4cf95357-2d84-4b23-b22a-c0feb7632829)
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/4f780fbc-edb1-4da7-8edb-f76164ac5970)
