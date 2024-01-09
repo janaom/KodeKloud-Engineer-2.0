@@ -1,6 +1,9 @@
 # KodeKloud-Engineer-2.0
 ##
 Solutions for the KodeKloud Engineer 2.0 tasks.
+
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/48d4aea8-7588-4e9e-88e2-7559d02bf2eb)
+
 ##
 Info about the course: https://engineer.kodekloud.com/
 ##
@@ -24,4 +27,4 @@ Infra details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/n
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/4cf95357-2d84-4b23-b22a-c0feb7632829)
 
-![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/4f780fbc-edb1-4da7-8edb-f76164ac5970)
+
