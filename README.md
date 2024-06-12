@@ -2,7 +2,9 @@
 ##
 Solutions for the KodeKloud Engineer 2.0 tasks.
 
-![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/21274aa2-17fc-43f3-b413-c62659cdc383)
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/1650cc64-c42e-4304-a23d-0d2c7380b3c7)
+
+
 
 
 
