@@ -57,6 +57,8 @@ Infra details: https://kodekloudhub.github.io/kodekloud-engineer/docs/projects/n
 
 ![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/97d0d9bd-fa53-4f30-b304-fc0e7142408f)
 
+![image](https://github.com/janaom/KodeKloud-Engineer-2.0/assets/83917694/64edd9f9-d338-4b4f-9440-e339319489f8)
+
 
 
 
